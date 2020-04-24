@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD1_RhHrWJFkkdEgPHft1aZBznbMNyw2fQ",
+            authDomain: "androidcafeuygulama.firebaseapp.com",
+            databaseURL: "https://androidcafeuygulama.firebaseio.com",
+            projectId: "androidcafeuygulama",
+            storageBucket: "androidcafeuygulama.appspot.com",
+            messagingSenderId: "883416071903",
+            appId: "1:883416071903:web:a489e9695bde3946f9336a",
+            measurementId: "G-3Y79Q58H4S"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      //  firebase.analytics();
+
+
+    </script>
+
+    <script src="1.js"></script>
+    <script src="islemler.js"></script>
+    <link rel="stylesheet" href="ContendAndGiris.css">
+    <link rel="stylesheet" href="IslemDiv.css">
+    <style>body{margin: 0px;}</style>
+
+</head>
+
+<body>
+    <div class="content-boyut  content-ic-hizalama content-gorsel">
+        <div id="girisDiv" class="giris-boyut giris-gorsel giris-ic-hizalama">
+            <div class="logo">
+                <img src="img/speaker.png" class="girisLogo">
+            </div>
+            <div class="formDiv-boyut formDiv-ic-hizalama">
+                <div class="formInput-boyut">
+                    <span><input type="text" id="kullaniciMail" name="kullaniciAd" placeholder="Mail" class="formElement-boyut formElement-gorsel customEditText"></span>
+                </div>
+                <div class="formInput-boyut">
+                    <span><input type="password" id="kullaniciSifre" name="kullaniciAd" placeholder="Sifre" class="formElement-boyut formElement-gorsel customEditText"></span>
+                </div>
+            </div>
+            <div id="loading" class="loading">
+                <img src="img/load.gif" style="width: 40px;height: 40px; vertical-align:middle">
+                <span style="color:rgb(115, 101, 201); margin-left: -5px" id="girisKontrol">Giriş Yapılıyor...</span>
+            </div>
+            <div class="formDiv-boyut formDiv-ic-hizalama">
+                <button onclick="$.FirebaseIslem.Giris()" class="button-boyut formElement-gorsel customButton">
+                    Giris Yap
+                </button>
+            </div>
+
+        </div>
+
+        <div id="islemDiv" class="islemDiv-boyut islemDiv-gorsel islemDiv-hizalama">
+
+            <div id="menu" class="menuDiv-boyut menuDiv-gorsel menuDiv-hizalama">
+                <span id="Siparisler" class="menuIcSpan-boyut menuIcSpan-gorsel menuIcSpan-hizalama" onclick="$.Yonlendirme.SiparisYonlendir()">Siparişler</span>
+                <span id="Masalar" class="menuIcSpan-boyut menuIcSpan-gorsel menuIcSpan-hizalama" onclick="$.Yonlendirme.MasaYonlendir()">Masalar</span>
+                <span id="Muzikler" class="menuIcSpan-boyut menuIcSpan-gorsel menuIcSpan-hizalama" onclick="$.Yonlendirme.MuzikYonlendir()">Müzikler</span>
+            </div>
+            <div id="dataDivi" class="dataDivi-boyut dataDivi-gorsel dataDivi-hizalama">
+                <div id="dataDivItemHeader" class="dataDivItem-boyut dataDivItem-gorsel dataDivItem-hizalama">
+                </div>
+                <div id="dataItemList" class="dataItemList-boyut dataItemList-gorsel dataItemList-hizalama">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

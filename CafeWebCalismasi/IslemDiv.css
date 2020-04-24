@@ -1,0 +1,133 @@
+        
+.islemDiv-boyut{
+    width: 70%;
+    height: 100%;
+}
+.islemDiv-gorsel{
+    background-color:#9033fa ;
+    background-color:rgb(30, 241, 143) ;
+    background-color:#9033fa ;
+    background-color:#C4C4C4 ;
+    background-color:#8A8393 ;
+    background-color:#625350 ;
+    background-color:#8A8393 ;
+    background-color:#9033fa ;
+
+
+    color:white;
+}
+.islemDiv-hizalama{
+    display: none;
+}
+
+
+/* */
+.menuDiv-boyut{
+    width: 70%;
+    height: 7%;
+    border-radius: 15px;
+}
+.menuDiv-gorsel{
+    background-color: rgb(30, 241, 143);
+    background-color:#9033fa;
+}
+.menuDiv-hizalama{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*   */
+.menuIcSpan-boyut{
+    width: 15%;
+    height: 100%;
+}
+.menuIcSpan-gorsel{
+    background-color: rgb(30, 241, 143);
+    cursor: pointer;
+  
+}
+.menuIcSpan-gorsel:hover{
+    background-color: rgb(11, 167, 94);
+}
+.menuIcSpan-hizalama{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*   */
+
+.dataDivi-boyut{
+    width: 70%;
+    height: 68%;
+}
+.dataDivi-gorsel{
+    background-color: rgb(30, 241, 143);
+  
+}
+.dataDivi-hizalama{
+    overflow: auto;
+    margin-top: 4%;
+}
+
+/**/
+
+.dataDivItem-boyut{
+    width: 100%;
+    height: 10%;
+}
+.dataDivItem-gorsel{
+    background-color: rgb(30, 241, 143);
+  
+}
+.dataDivItem-hizalama{
+    display: flex;
+    justify-content: center;
+}
+
+/**/
+
+.dataDivItem-boyut span{
+    height: 100%;
+    width: 21%;
+}
+.dataDivItem-gorsel span{
+    border: 1px solid #C4C4C4;
+    background-color: rgb(30, 241, 143);
+}
+.dataDivItem-hizalama span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dataDivItem-hizalama button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dataDivItem-boyut button{
+    width: 21%;
+    height: 48px;
+    border-radius: 24px!important;
+}
+/**/
+
+.dataItemList-boyut{
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    border-radius: 50px;
+}
+.dataItemList-gorsel{
+    background-color:rgb(30, 241, 143);
+  
+}
+.dataItemList-hizalama{
+    display: flex;
+    flex-direction: column;
+}
+/**/
+
+
